@@ -6,6 +6,8 @@
 // @author       MaiLy Dao
 // @match        https://www.youtube.com/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @updateURL    https://raw.githubusercontent.com/maily89/DistractionRemover/main/youtube.js
+// @downloadURL  https://raw.githubusercontent.com/maily89/DistractionRemover/main/youtube.js
 // @grant        none
 // ==/UserScript==
 
