@@ -14,17 +14,17 @@
 (function() {
     'use strict';
 
-    /*window.addEventListener('load', function () {
-       disableYoutubeRelated();
-    });*/
+    window.addEventListener('load', function () {
+       cleanYoutube();
+    });
     setTimeout(cleanYoutube, "5000");
 })();
 
-function matchDomain (domains) {
+/*function matchDomain (domains) {
   const hostname = window.location.hostname;
   if (typeof domains === 'string') { domains = [domains]; }
   return domains.some(domain => hostname === domain || hostname.endsWith('.' + domain));
-}
+}*/
 
 function cleanYoutube() {
    hideItem('related');
