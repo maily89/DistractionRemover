@@ -6,6 +6,18 @@
 // @author       MaiLy Dao
 // @match      https://www.youtube.com/*
 // @match      https://www.facebook.com/*
+// @include      http://facebook.com/*
+// @include      http://*.facebook.com/*
+// @include      https://facebook.com/*
+// @include      https://*.facebook.com/*
+// @include      http://facebook.com/*/*
+// @include      http://*.facebook.com/*/*
+// @include      https://facebook.com/*/*
+// @include      https://*.facebook.com/*/*
+// @include      http://facebook.com/*/*/*
+// @include      http://*.facebook.com/*/*/*
+// @include      https://facebook.com/*/*/*
+// @include      https://*.facebook.com/*/*/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @updateURL    https://raw.githubusercontent.com/maily89/DistractionRemover/main/youtube.js
 // @downloadURL  https://raw.githubusercontent.com/maily89/DistractionRemover/main/youtube.js
@@ -38,6 +50,7 @@ function playBell() {
 }
 
 function cleanFacebook() {
+    document.getElementsByClassName("mbl")[0].parentNode.removeChild(document.getElementsByClassName("mbl")[0]);
     if (window.location.pathname === "/") {
         document.querySelectorAll('[role="feed"]').forEach(el => hideItem(el));
     } else {
